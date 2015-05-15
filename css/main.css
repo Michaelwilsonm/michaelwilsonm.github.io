@@ -17,14 +17,14 @@ a {
 h1 {
 	font-size: 2.7em;
 	text-align: center;
-	margin: 0;
-	padding: 0px 0em;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 	color: white;
 }	
 
 h2 {
 	text-align: center;
-	margin: 0 0;
+	margin: 0 0 0 20px;
 	font-size: 1.5em;
 	color: white;
 	line-height: 0.2em;
@@ -91,9 +91,6 @@ nav a {
 /******************************
 Gallery Stylin'
 *******************************/
-section li.4 {
-	height: 600px 600px;
-}
 
 #gallery {
 	margin: 0;
