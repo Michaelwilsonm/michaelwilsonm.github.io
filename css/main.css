@@ -34,7 +34,7 @@ h3 {
 }
 
 .page {
-	background-image:url(../img/golfmain.jpg);
+	background-image: url(../img/golfmain.jpg);
 }
 
 .page, html {
@@ -42,7 +42,7 @@ h3 {
 }
 
 .page {
-	background-image:url ("img/golfmain.jpg");
+	background-image: url("../img/golfmain.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
 }
@@ -161,16 +161,16 @@ About page
 	h3 {
 		font-size: 2em;
 	}
-body {
-	background-image:url(../img/golf2.jpg);
+.really {
+	background-image: url(../img/golf2.jpg);
 }
 
-body, html {
+.really, html {
 	min-height: 100%;
 }
 
-body {
-	background-image:url ("img/golf2.jpg");
+.really {
+	background-image: url("../img/golf2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -186,7 +186,7 @@ body {
 }
 
 .con {
-	background-image:url(../img/con1.jpg);
+	background-image: url(../img/con1.jpg);
 }
 
 .con, html {
@@ -194,7 +194,7 @@ body {
 }
 
 .con {
-	background-image:url ("../img/con1.jpg");
+	background-image: url("../img/con1.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
 }
