@@ -1,62 +1,45 @@
 /******************************
 Header styling
 *******************************/
+#wrapper {
+	background-color: white;
+	max-width: 900px;
+	margin: auto;
+	padding: 5%;
+}
+
 img {
 	max-width: 100%;
-}
-.ball {
-	width: 40px;
-	height: 40px;
-	float: left;
-	padding: 15px 0 0 15px;
-}
-a {
-	text-decoration: none;
 }
 
 h1 {
 	font-size: 2.7em;
 	text-align: center;
 	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	color: white;
+	padding: 15px 0 10px 0;
+	color: black;
+	font-family: 'Pacifico', cursive;
 }	
 
 h2 {
 	text-align: center;
 	margin: 0 0 0 20px;
 	font-size: 1.5em;
-	color: white;
+	color: black;
 	line-height: 0.2em;
-}
-h3 {
-	margin: 0 0 1em 0;
-}
-
-.page {
-	background-image: url(../img/golfmain.jpg);
-}
-
-.page, html {
-	min-height: 100%;
-}
-
-.page {
-	background-image: url("../img/golfmain.jpg");
-	background-repeat: no-repeat;
-	background-size:cover;
-}
-
-h1, h2 {
 	font-family: 'Pacifico', cursive;
-
 }
 
 header {
 	float: left;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
+	margin: 0 0 0px 0;
+	padding: 30px -20px 30px 0px;
 	width: 100%;
+	background-color: green;	
+}
+
+a {
+	text-decoration: none;
 }
 
 
@@ -77,13 +60,27 @@ nav li {
 }
 
 nav a.navstuff, nav a:hover  {
-	color: #000
+	color: white;
 }
 
 nav a {
 	font-weight: 800;
 	padding: 15px 10px;
-	color: #fff;
+	color: #000;
+}
+nav {
+	background-color: #00aa00;
+}
+
+
+/******************************
+Ball icon in top left hand corner
+*******************************/
+.ball {
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding: 0 0 0 15px;
 }
 
 
@@ -102,12 +99,13 @@ Gallery Stylin'
 	float: left;
 	width: 45%;
 	margin: 2.5%;
+	background-color: #eeeeee
 }
 
 #gallery li a p {
 	margin: 0 0;
 	padding: 5%;
-	color: white;
+	color: black;
 	font-size: 16px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
@@ -136,9 +134,9 @@ Footer styling
 #foot {
 	text-align: center;
 	clear: both;
-	padding: 90px 0px;
+	padding: 30px 0px 0px 0px;
 	font-size: 0.7em;
-	color: white;
+	color: black;
 } 
 
 
@@ -149,7 +147,7 @@ About page
 
 #paragraph {
 	margin: auto;
-	color: white;
+	color: black;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	text-align: left;
 	padding: 10px;
@@ -161,19 +159,6 @@ About page
 	h3 {
 		font-size: 2em;
 	}
-.really {
-	background-image: url(../img/golf2.jpg);
-}
-
-.really, html {
-	min-height: 100%;
-}
-
-.really {
-	background-image: url("../img/golf2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 
 .pro {
 	width: 200px;
@@ -185,55 +170,34 @@ About page
  	border-radius: 15%;
 }
 
-.con {
-	background-image: url(../img/con1.jpg);
-}
-
-.con, html {
-	min-height: 100%;
-}
-
-.con {
-	background-image: url("../img/con1.jpg");
-	background-repeat: no-repeat;
-	background-size:cover;
-}
-
-
 
 /******************************
 Contact page
 *******************************/
 
-.marg {
+.contactInfo {
 	margin: auto;
-	color: white;
+	color: black;
 	text-decoration: none;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	padding: 10px;
 	text-align: left;
 }
 
-.marg h3 {
+.contactInfo h3 {
 	font-size: 2em;
 }
 
 .contact, li  {
-	color: #fff
+	color: #000
 }
 
 .phone a, .mail a {
 	font-weight: 700;
 	padding: 4px 0;
-	color: #fff;
+	color: #000;
 }
 
 li a.phone, li a:hover {
 	color: #000
 }
-
-
-
-
-
-
