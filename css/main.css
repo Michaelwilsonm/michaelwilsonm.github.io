@@ -1,203 +1,193 @@
-/******************************
+/****************************
 Header styling
-*******************************/
-#wrapper {
-	background-color: white;
-	max-width: 900px;
-	margin: auto;
-	padding: 5%;
+****************************/
+
+html,
+body {
+	height: 100%;
+	background-color: #f0f8ff;
 }
 
-img {
-	max-width: 100%;
-}
-
-h1 {
-	font-size: 2.7em;
+#michael {
 	text-align: center;
-	margin: 0 0 0 0;
-	padding: 15px 0 10px 0;
-	color: black;
-	font-family: 'Pacifico', cursive;
-}	
+	font-size: 3em;
+	color: #f0f8ff;
+	margin-top: 0px;
+	font-family: "Chivo";
+}
+
+#wilson {
+	text-align: center;
+	font-size: 3.4em;
+	color: #00bfff;
+	margin-top: -45px;
+	font-family: "Chivo";
+}
 
 h2 {
 	text-align: center;
-	margin: 0 0 0 20px;
+	color: #f0f8ff;
 	font-size: 1.5em;
-	color: black;
-	line-height: 0.2em;
-	font-family: 'Pacifico', cursive;
+	line-height: 0em;
+	padding: 0px 0 15px 0;
+	margin-top: -30px;
+  font-family: "Chivo";
 }
 
 header {
-	float: left;
-	margin: 0 0 0px 0;
-	padding: 30px -20px 30px 0px;
-	width: 100%;
-	background-color: green;	
+	background-color: #007;	
 }
 
 a {
 	text-decoration: none;
 }
 
+p {
+	font-size: 12px;
+	font-family: "Fira Sans";
+}
 
-/******************************
-nav styling
-*******************************/
+h6 {
+	text-align: center;
+	color: #f0f8ff;
+	margin-top: -20px; 
+	font-family: "Chivo";
+}
+
+/****************************
+Nav styling
+****************************/
 
 nav ul {
-	text-align: center;	
-	line-height: 1em;
-	padding: 15px 10px;
-	margin: 50px 50px;
-	font-family: 'Bangers', cursive;
+	text-align: center;
+	margin-left: -2.4em;
 }
 
 nav li {
 	display: inline-block;
+	font-family: "Fira Sans";
+	font-weight: bold;
 }
 
-nav a.navstuff, nav a:hover  {
-	color: white;
+nav a.navpage, nav a:hover {
+	color: #00f;
 }
 
-nav a {
-	font-weight: 800;
-	padding: 15px 10px;
+nav a{
 	color: #000;
 }
+
 nav {
-	background-color: #00aa00;
-}
-
-
-/******************************
-Ball icon in top left hand corner
-*******************************/
-.ball {
-	width: 40px;
-	height: 40px;
-	float: left;
-	padding: 0 0 0 15px;
+	background-color: #00bfff;
 }
 
 
 
-/******************************
-Gallery Stylin'
-*******************************/
+/****************************
+Main picture styling
+****************************/
 
-#gallery {
+#main {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 }
 
-#gallery li {
-	float: left;
-	width: 45%;
-	margin: 2.5%;
-	background-color: #eeeeee
+#main img {
+	width: 100%;
+	width: 500px;
+	height: 250px;
+	display: block;
+	margin: 15px auto 0 auto;
 }
 
-#gallery li a p {
-	margin: 0 0;
-	padding: 5%;
+#main p {
+	font-size: 10px;
 	color: black;
-	font-size: 16px;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-
-
-
-/******************************
-Footer styling
-*******************************/
-.icons1 {
-	max-width: 100%;
-	width: 30px;
-	height: 30px;
-	margin: 0 5px;
-}
-
-.icons2 {
-	max-width: 100%;
-	width: 35px;
-	height: 34px;
-	margin: -3px 0px;
-	padding: 0 5px;
-}
- 
-#foot {
 	text-align: center;
-	clear: both;
-	padding: 30px 0px 0px 0px;
-	font-size: 0.7em;
-	color: black;
-} 
-
-
-
-/******************************
-About page
-*******************************/
-
-#paragraph {
-	margin: auto;
-	color: black;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	text-align: left;
-	padding: 10px;
-	}
-
-.name {
-	color: #fff
-}
-	h3 {
-		font-size: 2em;
-	}
-
-.pro {
-	width: 200px;
-	height: 200px;
-	max-width: 100%;
-	margin: 0 0 0 80px;
-	padding: 10px 0px 0px 0px;
- 	display: block;	
- 	border-radius: 15%;
+	margin: 0 0 0 0;
 }
 
 
-/******************************
-Contact page
-*******************************/
+/****************************
+Education
+****************************/
 
-.contactInfo {
-	margin: auto;
-	color: black;
-	text-decoration: none;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	padding: 10px;
-	text-align: left;
+#education {
+	padding: 0px 10px 0px 10px;
 }
 
-.contactInfo h3 {
-	font-size: 2em;
+#education p {
+	font-size: 13px;
 }
 
-.contact, li  {
-	color: #000
+/****************************
+comlumns
+****************************/
+
+#columns, li {
+	font-size: 12px;
+	font-family: "Fira Sans";
 }
 
-.phone a, .mail a {
-	font-weight: 700;
-	padding: 4px 0;
-	color: #000;
+h4 {
+ font-size: 1em;
+ padding: 10px;
+ text-decoration: none;
+ color: white;
+ font-weight: bold;
+ text-shadow: 0 1px 0 black;
+ line-height: 50px; 
+ border-right: 30px solid transparent;
+ border-bottom: 30px solid #4c4c4c;
+ display: inline-block;
+ height: 0;
+ font-family: "Fira Sans";
+ font-weight: bold;
+}
+.column1 {
+	width: 30%;
 }
 
-li a.phone, li a:hover {
-	color: #000
+.column1 img {
+	display: block;
+	margin: 0 auto 0 auto;
+	width: 100px;
+	border-radius: 25%;
+}
+
+.column2 {
+	width: 31%;
+}
+
+.column2 img {
+	display: block;
+	margin: 0 auto 0 auto;
+	width: 100px;
+	border-radius: 50%;
+}
+
+.column3 {
+	width: 31%;
+}
+
+.column3 img {
+	display: block;
+	margin: 7.7em auto 0 auto;
+	width: 100px;
+	border-radius: 20%; 
+}
+
+.col {
+	display: inline-block;
+	padding: 12px;
+	margin: -10px;
+	vertical-align: top;
+}
+
+/****************************
+footer
+****************************/
+
+footer {
+	padding: 20px 0 0 5px;
 }
