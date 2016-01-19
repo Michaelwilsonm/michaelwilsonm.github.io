@@ -48,6 +48,7 @@ NAVIGATION
 }
 
 
+
 /********************
 DROP DOWN MENU
 ********************/
@@ -75,6 +76,20 @@ DROP DOWN MENU
   text-decoration: none;
   background-color: #222;
   color: white;
+  border-color: #222;
+}
+
+.dropbutton:focus {
+  text-decoration: none;
+  background-color: #eee;
+  color: #222;
+  border-color: #222;
+}
+
+.dropbutton.active {
+  text-decoration: none;
+  background-color: #222;
+  color: #eee;
   border-color: #222;
 }
 
