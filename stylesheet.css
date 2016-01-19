@@ -1,3 +1,97 @@
-h1 {
-  color: green;
+body {
+  background-color: #222;
 }
+
+
+
+/********************
+NAVIGATION
+********************/
+
+#navigation>ul>li {
+  display: inline-block;
+  margin: 5px 5% 5px 0%;
+}
+
+#navigation>ul>li>a {
+  padding: 0px 20px 0px 20px;
+  border-right: solid 2px;
+  border-radius: 0px 0px 25px 0px;
+  text-decoration: none;
+  display: block;
+  display: inline;
+  font-size: 12px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: #222;
+  opacity: 0.8;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+#navigation>ul>li>a:hover {
+  background-color: #222;
+  color: white;
+  border-color: #222;
+}
+
+#navigation {
+  margin: 10px 20px 10px 20px;
+  background-color: #eee;
+  border: solid 0.5%;
+  border-radius: 0px 0px 25px 0px;
+}
+
+.nav-list {
+  height: 30px;
+}
+
+
+/********************
+DROP DOWN MENU
+********************/
+
+.dropbutton {
+  float:right;
+  padding: 0px 20px 0px 20px;
+  border-right: solid 2px;
+  border-radius: 0px 0px 25px 0px;
+  text-decoration: none;
+  display: block;
+  display: inline;
+  font-size: 15px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin: 3px 20px 5px 20px;
+  color: #222;
+  opacity: 0.8;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.dropbutton:hover {
+  text-decoration: none;
+  background-color: #222;
+  color: white;
+  border-color: #222;
+}
+
+.dropdown-content>a {
+  margin-top: 28px;
+  position: fixed;
+  right: 38px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-decoration: none;
+  color: #222;
+  padding: 0px 20px 0px 20px;
+
+}
+
+.dropdown-content>a:hover {
+  background-color: #bbb;
+  border-radius: 0px 0px 25px 0px;
+}
+
+
