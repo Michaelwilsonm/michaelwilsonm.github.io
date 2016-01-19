@@ -22,7 +22,7 @@ NAVIGATION
   display: inline;
   font-size: 12px;
   font-family: 'Alegreya Sans SC', sans-serif;
-  color: #444;
+  color: #222;
   opacity: 0.8;
   -webkit-transition: background-color 0.3s ease-out;
   -moz-transition: background-color 0.3s ease-out;
@@ -31,9 +31,9 @@ NAVIGATION
 }
 
 #navigation>ul>li>a:hover {
-  background-color: #444;
+  background-color: #222;
   color: white;
-  border-color: #444;
+  border-color: #222;
 }
 
 #navigation {
@@ -43,11 +43,49 @@ NAVIGATION
   border-radius: 0px 0px 25px 0px;
 }
 
-mediabreakpoint 750px
 
+/********************
+DROP DOWN MENU
+********************/
 
+.dropbutton {
+  float:right;
+  padding: 0px 20px 0px 20px;
+  border-right: solid 2px;
+  border-radius: 0px 0px 25px 0px;
+  text-decoration: none;
+  display: block;
+  display: inline;
+  font-size: 15px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin: 3px 20px 5px 20px;
+  color: #222;
+  opacity: 0.8;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
 
+.dropbutton:hover {
+  text-decoration: none;
+  background-color: #222;
+  color: white;
+  border-color: #222;
+}
 
+.dropdown-content>a {
+  margin-top: 28px;
+  position: fixed;
+  right: 45px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-decoration: none;
+  color: #222;
+}
 
+.dropdown-content>a:hover {
+  background-color: #888;
+  padding: 0px 5px 0px 5px;
+}
 
 
