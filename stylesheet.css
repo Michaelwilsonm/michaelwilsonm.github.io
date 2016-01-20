@@ -66,6 +66,7 @@ DROP DOWN MENU
   margin: 3px 20px 5px 20px;
   color: #222;
   opacity: 0.8;
+  display: none;
   -webkit-transition: background-color 0.3s ease-out;
   -moz-transition: background-color 0.3s ease-out;
   -o-transition: background-color 0.3s ease-out;
@@ -93,6 +94,10 @@ DROP DOWN MENU
   border-color: #222;
 }
 
+.dropdown-content {
+  display: none;
+}
+
 .dropdown-content>a {
   margin-top: 28px;
   position: fixed;
@@ -101,12 +106,59 @@ DROP DOWN MENU
   text-decoration: none;
   color: #222;
   padding: 0px 20px 0px 20px;
-
 }
 
 .dropdown-content>a:hover {
   background-color: #bbb;
   border-radius: 0px 0px 25px 0px;
 }
+
+
+/********************
+SLIDER
+********************/
+
+
+#slider {
+  width: 350px;
+  height: 180px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+#slider .slides {
+  display: block;
+  width: 1400px;
+  height: 180px;
+  margin-left: 0;
+  padding: 0;
+}
+
+#slider .slide {
+  float: left;
+  list-style-type: none;
+  width: 350px;
+  height: 180px;
+}
+
+.slide>a>img {
+  width: 350px;
+  height: 180px;
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
