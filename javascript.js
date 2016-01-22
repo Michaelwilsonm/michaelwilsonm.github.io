@@ -38,7 +38,7 @@ $(document).ready(function(){
 
   var width = 350
   var animateSpeed = 1000
-  var pause = 5000
+  var pause = 4000
   var currentSlide = 1
 
   //cache DOM
@@ -46,8 +46,8 @@ $(document).ready(function(){
   var $slideContainer = $slider.find(".slides")
   var $slides = $slideContainer.find(".slide")
 
-  var interval
 
+  var interval
   function startSlider() {
     $slides.find("img").css("opacity", 0.6)
     interval = setInterval(function() {
@@ -72,9 +72,25 @@ $(document).ready(function(){
   $slider.on("mouseenter", pauseSlider).on("mouseleave", startSlider)
   startSlider()
 
+  function issData(){
+    $.ajax({
+      method: "GET",
+      url: "http://api.open-notify.org/iss-now.json",
+      dataType: 'jsonp',
+      success: latLng
+    })
+  }
 
+  function latLng(data){
+    var lat = data.iss_position.latitude
+    var lng = data.iss_position.longitude
 
+    console.log("lat : " + lng, "longitude : " + lng)
+  }
 
+  "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY"
+
+issData()
 
 
 
