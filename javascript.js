@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
   $(".dropbutton").on("click", function(){
     $(".dropdown-content").toggle(200, function(){
   })
@@ -71,32 +72,8 @@ $(document).ready(function(){
 
   $slider.on("mouseenter", pauseSlider).on("mouseleave", startSlider)
   startSlider()
-
-  function issData(){
-    $.ajax({
-      method: "GET",
-      url: "http://api.open-notify.org/iss-now.json",
-      dataType: 'jsonp',
-      success: latLng
-    })
-  }
-
-  function latLng(data){
-    var lat = data.iss_position.latitude
-    var lng = data.iss_position.longitude
-
-    console.log("lat : " + lng, "longitude : " + lng)
-  }
-
-  "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY"
-
-issData()
-
-
-
-
-
 })//end of ready
+
 
 
 
