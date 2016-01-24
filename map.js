@@ -8,7 +8,7 @@ function initMap() {
   });
 }
 
-// setInterval(issData, 10000)
+setInterval(issData, 10000)
 function issData(){
   $.ajax({
     method: "GET",
