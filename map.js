@@ -1,5 +1,6 @@
 KEY = "AIzaSyDO-dchbaQweyou9F2gjmHF3bvH3YQ8VaE"
 var map
+var markers = []
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -8,7 +9,7 @@ function initMap() {
   });
 }
 
-setInterval(issData, 10000)
+// setInterval(issData, 5000)
 function issData(){
   $.ajax({
     method: "GET",
@@ -29,15 +30,18 @@ function googleApi(googleLatLng){
 
 
 function locationStatus(data2) {
-  if (data2.results < 1) {
+  if (data2.results < 17) {
     var results = "the Ocean"
     printAddress(results)
   }else{
+  var newAddress
   var arrayAddress = []
   arrayAddress.push(data2.results[0].formatted_address)
-  var arrayNum = arrayAddress.length
-  var address = arrayAddress.slice(arrayNum)
-  console.log(address)
+  for (var i = 0;i < arrayAddress.length; i++) {
+    newAddress = arrayAddress[i].split(", ")
+  }
+  var arrayNum = newAddress.length
+  var address = newAddress.slice(arrayNum - 1)
   printAddress(address)
   }
 }
@@ -69,7 +73,27 @@ function dropPin(coords) {
     position: myLatLng,
     map: map,
   });
+  showMarkers()
+  markers.push(marker)
+  if (markers.length === 4) {
+    markers.shift()
+    showMarkers()
+  }
+  console.log(markers)//3
 }
+
+function setMapOnAll(map) {
+  console.log(map)//1
+  for( var i = 0; i < markers.length; i ++) {
+    // console.log(markers[i].setMap(map))
+  }
+}
+
+function showMarkers() {
+  setMapOnAll(map);
+  console.log(map)//2
+}
+
 
 
 issData()
