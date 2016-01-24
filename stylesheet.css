@@ -100,8 +100,8 @@ DROP DOWN MENU
 
 .dropdown-content>a {
   margin-top: 28px;
-  position: fixed;
-  right: 38px;
+  position: absolute;
+  right: 18px;
   font-family: 'Alegreya Sans SC', sans-serif;
   text-decoration: none;
   color: #222;
