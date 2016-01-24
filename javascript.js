@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
   $(".dropbutton").on("click", function(){
     $(".dropdown-content").toggle(200, function(){
   })
@@ -38,7 +39,7 @@ $(document).ready(function(){
 
   var width = 350
   var animateSpeed = 1000
-  var pause = 5000
+  var pause = 4000
   var currentSlide = 1
 
   //cache DOM
@@ -46,8 +47,8 @@ $(document).ready(function(){
   var $slideContainer = $slider.find(".slides")
   var $slides = $slideContainer.find(".slide")
 
-  var interval
 
+  var interval
   function startSlider() {
     $slides.find("img").css("opacity", 0.6)
     interval = setInterval(function() {
@@ -71,16 +72,8 @@ $(document).ready(function(){
 
   $slider.on("mouseenter", pauseSlider).on("mouseleave", startSlider)
   startSlider()
-
-
-
-
-
-
-
-
-
 })//end of ready
+
 
 
 

@@ -100,8 +100,8 @@ DROP DOWN MENU
 
 .dropdown-content>a {
   margin-top: 28px;
-  position: fixed;
-  right: 38px;
+  position: absolute;
+  right: 18px;
   font-family: 'Alegreya Sans SC', sans-serif;
   text-decoration: none;
   color: #222;
@@ -145,6 +145,36 @@ SLIDER
   width: 350px;
   height: 180px;
   opacity: 0.6;
+}
+
+/***********************
+MAP
+***********************/
+
+
+html, body {
+  height: 100%; margin: 0; padding: 0;
+}
+
+#map {
+  margin: 20px 0px 0px 20px;
+  width: 350px;
+  height: 350px;
+}
+
+#iss-location {
+  color: #eee;
+  margin: 10px 0px 0px 20px;
+}
+
+h3 {
+  margin: 20px 0px 0px 20px;
+  color: #aaa;
+}
+
+#iss-address {
+  margin: 20px 0px 0px 20px;
+  color: #aaa;
 }
 
 
