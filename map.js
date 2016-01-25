@@ -9,7 +9,8 @@ function initMap() {
   });
 }
 
-// setInterval(issData, 5000)
+// setInterval(issData, 100000)
+// setInterval(issData, 2000)
 function issData(){
   $.ajax({
     method: "GET",
@@ -42,7 +43,6 @@ function locationStatus(data2) {
   }
   var arrayNum = newAddress.length
   var address = newAddress.slice(arrayNum - 1)
-  console.log(address)
   printAddress(address)
   }
 }
@@ -74,27 +74,30 @@ function dropPin(coords) {
     position: myLatLng,
     map: map,
   });
-  showMarkers()
   markers.push(marker)
   if (markers.length === 4) {
     markers.shift()
-    showMarkers()
   }
-  console.log(markers)//3
+  clearMarkers()
 }
 
 function setMapOnAll(map) {
-  console.log(map)//1
+  // showMarkers()
   for( var i = 0; i < markers.length; i ++) {
-    // console.log(markers[i].setMap(map))
+    markers[i].setMap(map)
   }
 }
 
 function showMarkers() {
-  setMapOnAll(map);
-  console.log(map)//2
+  setMapOnAll(map)
+}
+
+function clearMarkers() {
+  setMapOnAll(null);
+  showMarkers()
 }
 
 
 
 issData()
+
