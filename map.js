@@ -30,7 +30,7 @@ function googleApi(googleLatLng){
 
 
 function locationStatus(data2) {
-  if (data2.results < 17) {
+  if (data2.results < 1) {
     var results = "the Ocean"
     printAddress(results)
   }else{
@@ -42,6 +42,7 @@ function locationStatus(data2) {
   }
   var arrayNum = newAddress.length
   var address = newAddress.slice(arrayNum - 1)
+  console.log(address)
   printAddress(address)
   }
 }
