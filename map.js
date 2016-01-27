@@ -1,16 +1,18 @@
 KEY = "AIzaSyDO-dchbaQweyou9F2gjmHF3bvH3YQ8VaE"
 var map
 var markers = []
+var myLatlng
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 17.0000, lng: 17.00000},
+  var Latlng = new google.maps.LatLng(17.363882,17.044922);
+  var mapOptions = {
     zoom: 1,
-  });
+    center: Latlng
+  }
+  map = new google.maps.Map(document.getElementById('map'), mapOptions );
 }
 
-// setInterval(issData, 100000)
-// setInterval(issData, 2000)
+setInterval(issData, 100000)
 function issData(){
   $.ajax({
     method: "GET",
@@ -69,35 +71,17 @@ function printCoords(coords) {
 }
 
 function dropPin(coords) {
-  var myLatLng = coords
+  myLatlng = coords
   var marker = new google.maps.Marker({
-    position: myLatLng,
+    position: myLatlng,
     map: map,
   });
+  map.setCenter(myLatlng)
   markers.push(marker)
   if (markers.length === 4) {
     markers.shift()
   }
-  clearMarkers()
 }
-
-function setMapOnAll(map) {
-  // showMarkers()
-  for( var i = 0; i < markers.length; i ++) {
-    markers[i].setMap(map)
-  }
-}
-
-function showMarkers() {
-  setMapOnAll(map)
-}
-
-function clearMarkers() {
-  setMapOnAll(null);
-  showMarkers()
-}
-
-
 
 issData()
 
