@@ -15,7 +15,7 @@ NAVIGATION
 
 #navigation>ul>li>a {
   padding: 0px 20px 0px 20px;
-  border-right: solid 2px;
+  border-right: solid 0px;
   border-radius: 0px 0px 25px 0px;
   text-decoration: none;
   display: block;
@@ -56,7 +56,7 @@ DROP DOWN MENU
 .dropbutton {
   float:right;
   padding: 0px 20px 0px 20px;
-  border-right: solid 2px;
+  border-right: solid 0px;
   border-radius: 0px 0px 25px 0px;
   text-decoration: none;
   display: block;

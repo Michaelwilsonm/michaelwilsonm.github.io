@@ -12,7 +12,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'), mapOptions );
 }
 
-setInterval(issData, 100000)
+setInterval(issData, 5000)
 function issData(){
   $.ajax({
     method: "GET",
