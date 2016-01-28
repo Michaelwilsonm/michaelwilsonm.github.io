@@ -120,16 +120,16 @@ SLIDER
 
 
 #slider {
-  width: 350px;
-  height: 180px;
+  width: 360px;
+  height: 190px;
   overflow: hidden;
   margin-left: 20px;
 }
 
 #slider .slides {
   display: block;
-  width: 1400px;
-  height: 180px;
+  width: 1440px;
+  height: 190px;
   margin-left: 0;
   padding: 0;
 }
@@ -137,13 +137,13 @@ SLIDER
 #slider .slide {
   float: left;
   list-style-type: none;
-  width: 350px;
-  height: 180px;
+  width: 370px;
+  height: 190px;
 }
 
 .slide>a>img {
-  width: 350px;
-  height: 180px;
+  width: 370px;
+  height: 190px;
   opacity: 0.6;
 }
 
@@ -157,36 +157,72 @@ html, body {
 }
 
 #map {
-  margin: 20px 0px 0px 20px;
-  width: 350px;
-  height: 350px;
+  margin: 5px 0px 5px 20px;
+  width: 360px;
+  height: 300px;
 }
 
 #iss-location {
   color: #eee;
-  margin: 10px 0px 0px 20px;
+  margin: 10px 0px 20px 20px;
 }
 
 h3 {
-  margin: 20px 0px 0px 20px;
+  margin: 50px 0px 0px 20px;
   color: #aaa;
 }
 
 #iss-address {
-  margin: 20px 0px 0px 20px;
+  margin: 0px 0px 0px 20px;
   color: #aaa;
 }
 
+#iss-location p {
+  color: #eee;
+  margin: 5px 0px 0px 0px;
+}
+
+/***********************
+CONTAINER TEXT & IMAGES
+***********************/
+
+html, body, .contain {
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.contain {
+    min-width: 400px;
+}
+.left {
+    float: left;
+    width: 450px;
+    margin-right: -450px;
+    height:100%;
+}
+.right {
+    margin: 0px 40px 0px 450px;
+    background-color: #eee;
+    height: 100%;
+}
+
+@media (max-width: 850px) {
+
+  .right {
+    background-color: #eee;
+    margin: 150px 20px 0px 20px;
+    background-color: #eee;
+    height: 100%;
+  }
+
+  .left {
+    float: none;
+    width: 450px;
+    margin-right: 50px;
+  }
 
 
-
-
-
-
-
-
-
-
+}
 
 
 

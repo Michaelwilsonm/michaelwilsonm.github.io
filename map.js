@@ -12,7 +12,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'), mapOptions );
 }
 
-setInterval(issData, 5000)
+// setInterval(issData, 5000)
 function issData(){
   $.ajax({
     method: "GET",
@@ -67,7 +67,7 @@ function latLong(data){
 function printCoords(coords) {
   var latitude = coords.lat
   var longitude = coords.lng
-  $("#iss-location").html("<p>" + "Current coordinates of the International Space Station" + "</p>" + "<p>" + "latitude : " + latitude + "</br>" + " longitude : " + longitude)
+  $("#iss-location").html("<p>" + "Current co-ords of the International Space Station" + "</p>" + "<p>" + "latitude : " + latitude + "</br>" + " longitude : " + longitude)
 }
 
 function dropPin(coords) {
