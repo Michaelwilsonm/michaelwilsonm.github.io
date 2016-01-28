@@ -128,7 +128,7 @@ SLIDER
 
 #slider .slides {
   display: block;
-  width: 1440px;
+  width: 1500px;
   height: 190px;
   margin-left: 0;
   padding: 0;
@@ -137,12 +137,12 @@ SLIDER
 #slider .slide {
   float: left;
   list-style-type: none;
-  width: 370px;
+  width: 360px;
   height: 190px;
 }
 
 .slide>a>img {
-  width: 370px;
+  width: 360px;
   height: 190px;
   opacity: 0.6;
 }
@@ -191,20 +191,44 @@ html, body, .contain {
     padding:0;
     margin:0;
 }
+
 .contain {
     min-width: 400px;
+    margin-top: 50px;
 }
+
 .left {
     float: left;
     width: 450px;
-    margin-right: -450px;
+    margin: 0px -450px 0px 0px;
     height:100%;
 }
+
 .right {
-    margin: 0px 40px 0px 450px;
+    margin: 0px 50px 0px 450px;
     background-color: #eee;
     height: 100%;
 }
+
+
+/***********************
+CONTAIN INFO
+***********************/
+
+.right>h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.right>p {
+  margin: 20px 20px 0px 20px;
+  border-bottom: 1px solid;
+}
+
+
+/***********************
+MEDIA QUERYS
+***********************/
 
 @media (max-width: 850px) {
 
@@ -220,11 +244,5 @@ html, body, .contain {
     width: 450px;
     margin-right: 50px;
   }
-
-
 }
-
-
-
-
 

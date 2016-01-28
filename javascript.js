@@ -37,7 +37,7 @@ $(document).ready(function(){
     return false
   })
 
-  var width = 370
+  var width = 360
   var animateSpeed = 1000
   var pause = 4000
   var currentSlide = 1
