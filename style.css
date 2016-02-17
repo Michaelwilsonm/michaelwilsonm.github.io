@@ -1,0 +1,174 @@
+body, html
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/**********************
+navigation/banner
+**********************/
+
+.banner {
+  background-image: url("/images/rocks.jpg");
+  min-height: 555px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#navigation {
+  padding: 40px;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin-top: -30px;
+}
+
+.nav-list>li>a {
+  font-size: 17px;
+  display: inline-block;
+  float: right;
+  margin: 0px 30px 0px 0px;
+  color: white;
+}
+
+.nav-list>li>a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content {
+  position: relative;
+  width: 80%;
+  left: 10px;
+  display: none;
+}
+
+.dropdown-content>li {
+  list-style-type: none;
+  padding-top: 10px;
+  border-bottom: solid 1px;
+  border-bottom-color: white;
+  margin-bottom: 5px;
+
+}
+
+.dropdown-content>li>a {
+  font-size: 17px;
+  color: white;
+  margin-left: 20px;
+}
+
+.dropdown-content>li>a:hover {
+  text-decoration: none;
+}
+
+.dropdown-content>li>a:visited {
+  text-decoration: none;
+}
+
+#nav-box {
+  width: 100%;
+  height: 40px;
+}
+
+#nav-icon1 {
+  cursor: pointer;
+  height: 40px;
+  float: right;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: relative;
+  height: 3px;
+  width: 40px;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1.open span:nth-child(2) {
+  top: 10px;
+  width: 25px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 20px;
+  width: 10px;
+}
+
+
+
+/******************
+header inside banner
+******************/
+
+h1, p {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+
+/******************
+breakpoints
+******************/
+
+.non-scrolling-background {
+    background-image: url("/images/office.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-breakpoints_1 {
+  width: 100%;
+  height:400px;
+  background-color: #fff;
+}
+
+.top-breakpoints_2 {
+  width: 100%;
+  height:400px;
+  background-color: #ddd;
+}
+
+.bottom-breakpoints_1 {
+  width: 100%;
+  height:400px;
+  background-color: #fff;
+}
+
+.bottom-breakpoints_2 {
+  width: 100%;
+  height:200px;
+  background-color: #ddd;
+}
