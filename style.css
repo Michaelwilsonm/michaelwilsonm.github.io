@@ -11,7 +11,7 @@ navigation/banner
 **********************/
 
 .banner {
-  background-image: url("/images/rocks.jpg");
+  background-image: url("images/rocks.jpg");
   min-height: 555px;
   background-position: center;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@ breakpoints
 ******************/
 
 .non-scrolling-background {
-    background-image: url("/images/office.jpg");
+    background-image: url("images/office.jpg");
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
