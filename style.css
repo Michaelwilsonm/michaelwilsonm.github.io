@@ -25,6 +25,7 @@ navigation/banner
 .nav-list {
   list-style-type: none;
   margin-top: -30px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nav-list>li>a {
@@ -53,6 +54,7 @@ navigation/banner
   border-bottom: solid 1px;
   border-bottom-color: white;
   margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -131,6 +133,7 @@ h1, .banner-p {
   text-align: center;
   font-weight: bold;
   color: black;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -154,6 +157,7 @@ about me
   margin-right: auto;
   height: 100px;
   width: 400px;
+
 }
 
 .pro-pic {
@@ -164,16 +168,32 @@ about me
   box-shadow: 2px 2px 1px #888888;
 }
 
-.name-header, .p-header {
+.name-header {
   float: left;
   margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .p-header {
   color: #bbb;
+  float: left;
+  margin-left: 20px;
 }
 
+.skills {
+  margin-top: 50px;
+  list-style-type: circle;
+}
 
+.skills>h4 {
+  color: #bbb;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.profile-content {
+  margin: auto;
+  width: 800px;
+}
 
 
 
@@ -212,14 +232,14 @@ breakpoints
     background-size: cover;
 }
 
-.bottom-breakpoints_1 {
+/*.bottom-breakpoints_1 {
   width: 100%;
   height:400px;
   background-color: #fff;
 }
-
+*/
 .bottom-breakpoints_2 {
   width: 100%;
   height:200px;
-  background-color: #ddd;
+  background-color: #fff;
 }
