@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  //media querys
   if (matchMedia) {
     var mediaQuery = window.matchMedia( "(max-width: 750px)" );
     mediaQuery.addListener(widthChange)
@@ -33,11 +34,13 @@ $(document).ready(function(){
     }
   }
 
+  //hamburger icon open
   $("#nav-icon1").click(function(){
     $(this).toggleClass("open")
     $(".dropdown-content").slideToggle("fast")
   })
 
+  //nav-list height bounces on hover
   $(".nav-list li a").mouseenter(function(){
     $(this).stop().animate({marginTop: "-3px"}, 100)
   })
@@ -45,6 +48,7 @@ $(document).ready(function(){
     $(this).stop().animate({marginTop: "0px"}, 10)
   })
 
+  //highlight dropdown content
   $(".dropdown-content li").hover(function(){
     $(this).find("a").stop().css({color: "black"})
     $(this).stop().css({backgroundColor: "white"})
@@ -55,6 +59,7 @@ $(document).ready(function(){
     $(this).stop().css({cursor: "pointer"})
   })
 
+  //scrolling animation
   $(".dropdown-content li").click(function(e){
     var $anchor = $(this).find("a")
     var anchorHash = $anchor[0].hash
@@ -65,6 +70,7 @@ $(document).ready(function(){
   event.preventDefault();
   $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 1000);
   })
+
 
 
 
