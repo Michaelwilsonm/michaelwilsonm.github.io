@@ -4,7 +4,9 @@ body, html
   padding: 0;
 }
 
-
+p, li, h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+}
 
 /**********************
 navigation/banner
@@ -25,7 +27,7 @@ navigation/banner
 .nav-list {
   list-style-type: none;
   margin-top: -30px;
-  font-family: 'Open Sans', sans-serif;
+
 }
 
 .nav-list>li>a {
@@ -54,7 +56,7 @@ navigation/banner
   border-bottom: solid 1px;
   border-bottom-color: white;
   margin-bottom: 5px;
-  font-family: 'Open Sans', sans-serif;
+
 
 }
 
@@ -133,7 +135,7 @@ h1, .banner-p {
   text-align: center;
   font-weight: bold;
   color: black;
-  font-family: 'Open Sans', sans-serif;
+
 }
 
 
@@ -146,18 +148,27 @@ about me
 
 .top-breakpoints_1 {
   width: 100%;
-  height:400px;
+  height: 100%;
   background-color: #fff;
   margin-top: -10px;
 }
 
-.profile-box {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.image-box {
+  margin: 50px auto 30px auto;
   height: 100px;
-  width: 400px;
+  width: 430px;
+}
 
+.image-box>h2 {
+  float: left;
+  margin-left: 50px;
+
+}
+
+.image-box>p {
+  color: #bbb;
+  float: left;
+  margin-left: 50px;
 }
 
 .pro-pic {
@@ -168,47 +179,35 @@ about me
   box-shadow: 2px 2px 1px #888888;
 }
 
-.name-header {
-  float: left;
-  margin-left: 20px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.p-header {
-  color: #bbb;
-  float: left;
-  margin-left: 20px;
-}
-
 .skills {
-  margin-top: 50px;
+}
+
+.skills>ul {
+  margin-left: -20px;
   list-style-type: circle;
 }
 
-.skills>h4 {
+.skills>ul>h4 {
   color: #bbb;
-  font-family: 'Open Sans', sans-serif;
 }
 
-.profile-content {
-  margin: auto;
-  width: 800px;
+.profile {
+}
+
+.profile>h4 {
+  color: #bbb;
+  margin-left: 15px;
+}
+
+.col-sm-6 {
+  padding: 0px 60px 30px 60px;
+  border-left: 1px solid #ddd;
+  margin-bottom: 20px;
 }
 
 
 
 
-
-
-
-
-
-
-.top-breakpoints_2 {
-  width: 100%;
-  height: 350px;
-  background-color: #ddd;
-}
 
 
 
@@ -222,6 +221,11 @@ breakpoints
 ******************/
 
 
+.top-breakpoints_2 {
+  width: 100%;
+  height: 350px;
+  background-color: #ddd;
+}
 
 .non-scrolling-background {
     background-image: url("images/office.jpg");
@@ -232,14 +236,13 @@ breakpoints
     background-size: cover;
 }
 
-/*.bottom-breakpoints_1 {
-  width: 100%;
-  height:400px;
-  background-color: #fff;
-}
-*/
 .bottom-breakpoints_2 {
   width: 100%;
   height:200px;
   background-color: #fff;
 }
+
+.profile {
+  margin
+}
+

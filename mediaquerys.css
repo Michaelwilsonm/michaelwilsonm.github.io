@@ -1,0 +1,21 @@
+@media only screen and (max-width : 768px) {
+  .pro-pic {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+
+  .image-box>h2 {
+  float: left;
+  margin-left: 20px;
+  }
+
+.image-box>p {
+    color: #bbb;
+    float: left;
+    margin-left: 20px;
+  }
+
+}
+

@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   //media querys
   if (matchMedia) {
-    var mediaQuery = window.matchMedia( "(max-width: 750px)" );
+    var mediaQuery = window.matchMedia( "(max-width: 768px)" );
     mediaQuery.addListener(widthChange)
     widthChange.mediaQuery
   }
