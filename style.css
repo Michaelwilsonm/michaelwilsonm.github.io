@@ -13,7 +13,7 @@ navigation/banner
 **********************/
 
 .banner {
-  background-image: url("images/rocks.jpg");
+  background-image: url("images/rocks_small.jpg");
   min-height: 555px;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,7 +201,7 @@ about me
 
 .col-sm-6 {
   padding: 0px 60px 30px 60px;
-  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   margin-bottom: 20px;
 }
 
