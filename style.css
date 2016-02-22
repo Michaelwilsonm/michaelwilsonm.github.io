@@ -1,5 +1,9 @@
-body, html
-{
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
   margin: 0;
   padding: 0;
 }
@@ -40,13 +44,17 @@ navigation/banner
 
 .nav-list>li>a:hover {
   text-decoration: none;
-  color: black;
+  color: #999;
 }
 
 .fa.fa-chevron-down.fa-4x {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+.fa.fa-chevron-down.fa-4x:hover {
+  color: #fff;
 }
 
 .chevron_box {
@@ -254,6 +262,23 @@ breakpoints
 }
 
 .profile {
-  margin
 }
 
+
+/******************
+footer
+******************/
+.icons {
+  text-align: center;
+}
+
+.icons>li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.icons>li:hover {
+  color: #999;
+}

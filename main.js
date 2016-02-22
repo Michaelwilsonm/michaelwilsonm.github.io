@@ -50,13 +50,20 @@ $(document).ready(function(){
 
   //highlight dropdown content
   $(".dropdown-content li").hover(function(){
-    $(this).find("a").stop().css({color: "black"})
+    $(this).find("a").stop().css({color: "#999"})
     $(this).stop().css({backgroundColor: "white"})
     $(this).stop().css({cursor: "pointer"})
   }, function() {
     $(this).find("a").css({color: "white"})
     $(this).stop().css({backgroundColor: "transparent"})
     $(this).stop().css({cursor: "pointer"})
+  })
+
+  $(".fa.fa-chevron-down.fa-4x").mouseenter(function(){
+  $(this).stop().animate({marginTop: "-3px"}, 100)
+  })
+  .mouseleave(function() {
+    $(this).stop().animate({marginTop: "0px"}, 10)
   })
 
   //scrolling animation
