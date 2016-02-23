@@ -243,11 +243,22 @@ projects
 
 .caption>h3 {
   text-align: center;
+  color: #aaa;
 }
 
 .thumbnail.two>img {
-  width: 250px;
-  height: 150px;
+  width: 233px;
+  height: 132px;
+}
+
+p>a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+p>a:hover {
+  text-decoration: none;
+  color: #111;
 }
 
 
