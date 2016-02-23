@@ -8,6 +8,10 @@ body, html
   .pro-pic {
     display: none;
   }
+
+  .quote {
+  font-size: 30px;
+  }
 }
 
 @media only screen and (min-width : 768px) {
@@ -22,6 +26,5 @@ body, html
     float: left;
     margin-left: 20px;
   }
-
 }
 
