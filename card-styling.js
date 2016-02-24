@@ -2,24 +2,28 @@ $(document).ready(function(){
 
   $(".thumbnail").hover(function(){
     $img = $(this).find('img')
-    if ($(this).hasClass("one")) {
-      $img.animate({
+    $one = $(this).hasClass("one")
+    $two = $(this).hasClass("two")
+    $three = $(this).hasClass("three")
+    if ($one) {
+      $img.stop().animate({
         width: "250px",
-        height: "150px"
-      }, 1000)
-    }else if ($(this).hasClass("two")) {
-      $img.animate({
+        height: "150px",
+        position: "fixed"
+      }, 300)
+    }else if ($two) {
+      $img.stop().animate({
         width: "265px",
         height: "160px"
-      }, 1000)
-    }else{ $(this).hasClass("three")
-      $img.animate({
+      }, 300)
+    }else{ $three
+      $img.stop().animate({
         width: "250px",
         height: "160px"
-      }, 1000)
+      }, 300)
     }
   },function(){
-    console.log($(this))
+    $(this).stop().find("img").animate({width: "200", height: "132"})
   });
 
 
