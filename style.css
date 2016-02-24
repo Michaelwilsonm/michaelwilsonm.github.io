@@ -231,6 +231,13 @@ projects
   padding: 15px 0 15px 0;
 }
 
+.code {
+  text-align: center;
+  margin-top: 20px;
+  color: #999;
+}
+
+
 .thumbnail {
   margin: 0;
 }
@@ -246,9 +253,22 @@ projects
   color: #aaa;
 }
 
+.caption>p {
+  padding: 10px;
+  /*font-size: 13px;*/
+}
+
 .thumbnail.two>img {
-  width: 233px;
+  width: 243px;
   height: 132px;
+}
+
+.three>.caption>h3 {
+  margin-top: 62px;
+}
+
+.three {
+  padding-bottom: 74px;
 }
 
 p>a {
@@ -279,7 +299,7 @@ non-scrolling background
 
 
 /******************
-social icons
+quote
 ******************/
 
 .bottom-breakpoints_1 {
