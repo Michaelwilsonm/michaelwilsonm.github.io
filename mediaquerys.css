@@ -32,11 +32,15 @@ body, html
   }
 }
 
+/**************
+MOBILE
+*************/
+
 @media only screen and (max-device-width: 480px) {
   h1 {
     font-size: 70px;
     color: #eee;
-    margin-top: -20px;
+    margin-top: 0px;
   }
 
   .banner-p {
@@ -106,8 +110,60 @@ body, html
     background-image: url("images/water-mobile.jpg");
   }
 
+  h2 {
+    font-size: 50px;
+  }
 
+  .mobile {
+    display: none;
+  }
 
+  h4 {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
 
+  p {
+    padding: 0 40px 0 40px;
+  }
+
+  .skills>ul>li {
+    margin-left: 100px;
+  }
+
+  .skills {
+    margin-bottom: 50px;
+  }
+
+  .thumbnail {
+    margin: 30px;
+    padding: 20px;
+  }
+
+  .one>img {
+    width: 550px;
+    height: 300px;
+  }
+
+  .thumbnail.two>img {
+    width: 650px;
+    height: 350px;
+  }
+
+  .fa-5x {
+    font-size: 13em;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .quote-name {
+    display: none;
+  }
+
+  .icons>li {
+    margin-right: 60px;
+  }
 }
 
