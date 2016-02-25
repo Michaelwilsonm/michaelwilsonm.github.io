@@ -2,12 +2,14 @@ $(document).ready(function(){
 
   //media querys
   if (matchMedia) {
+    var mobileQuery = window.matchMedia( "(max-device-width: 480px)" )
     var mediaQuery = window.matchMedia( "(max-width: 768px)" );
     mediaQuery.addListener(widthChange)
     widthChange.mediaQuery
+    widthChange.mobileQuery
   }
 
-  if (mediaQuery.matches == true) {
+  if (mediaQuery.matches == true || mobileQuery.matches == true) {
     $("#nav-icon1").show()
     $(".nav-list li a").css("display", "none")
     $("h1").css({fontSize: "34px"})
@@ -19,8 +21,8 @@ $(document).ready(function(){
     $(".nav-list li a").show()
   }
 
-  function widthChange(mediaQuery) {
-    if (mediaQuery.matches) {
+  function widthChange(query) {
+    if (query.matches) {
       $("#nav-icon1").show()
       $(".nav-list li a").css("display", "none")
       $("h1").css({fontSize: "34px"})

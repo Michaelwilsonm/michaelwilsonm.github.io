@@ -28,3 +28,12 @@ body, html
   }
 }
 
+@media only screen and (max-device-width: 480px) {
+
+  h1 {
+  }
+
+}
+
+
+  /*and (max-device-width: 667px)*/
