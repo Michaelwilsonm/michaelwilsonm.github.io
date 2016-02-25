@@ -18,6 +18,10 @@ p, li, h1, h2, h3, h4 {
 navigation/banner
 **********************/
 
+h1 {
+  font-size: 36px;
+}
+
 .banner {
   background-image: url("images/rocks_small.jpg");
   min-height: 555px;

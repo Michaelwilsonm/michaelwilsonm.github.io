@@ -3,7 +3,9 @@ $(document).ready(function(){
   //media querys
   if (matchMedia) {
     var mobileQuery = window.matchMedia( "(max-device-width: 480px)" )
+    console.log(mobileQuery)
     var mediaQuery = window.matchMedia( "(max-width: 768px)" );
+    console.log(mediaQuery)
     mediaQuery.addListener(widthChange)
     widthChange.mediaQuery
     widthChange.mobileQuery
@@ -12,24 +14,21 @@ $(document).ready(function(){
   if (mediaQuery.matches == true || mobileQuery.matches == true) {
     $("#nav-icon1").show()
     $(".nav-list li a").css("display", "none")
-    $("h1").css({fontSize: "34px"})
     $("#nav-icon1").removeClass("open")
   }
   else{
-    $("h1").css({fontSize: "50px"})
     $("#nav-icon1").hide()
     $(".nav-list li a").show()
   }
 
   function widthChange(query) {
+    console.log(query)
     if (query.matches) {
       $("#nav-icon1").show()
       $(".nav-list li a").css("display", "none")
-      $("h1").css({fontSize: "34px"})
       $("#nav-icon1").removeClass("open")
     }
     else {
-      $("h1").css({fontSize: "50px"})
       $(".dropdown-content").hide()
       $("#nav-icon1").hide()
       $(".nav-list li a").show()
