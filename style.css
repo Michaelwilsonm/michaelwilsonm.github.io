@@ -236,9 +236,14 @@ projects
 }
 
 .code {
+  width: 100px;
   text-align: center;
-  margin-top: 20px;
-  color: #999;
+  margin: 15px auto -18px;
+  color: #fff;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
 }
 
 
