@@ -50,7 +50,7 @@ h1 {
 
 .nav-list>li>a:hover {
   text-decoration: none;
-  color: #999;
+  color: #000;
 }
 
 .fa.fa-chevron-down.fa-4x {
@@ -243,31 +243,22 @@ projects
   padding: 10px;
   border-radius: 50%;
   background-color: #ddd;
-  display:none;
+}
+
+.thumbnail.one {
   position: relative;
+  left: -300px;
 }
 
-.caption:nth-of-type(2) {
-  position: absolute;
-  top: 100px;
-  padding-right: 35px;
-}
-
-.caption:nth-of-type(2)>h3 {
-  margin-left: -10px;
-}
-
-.thumbnail.one>img {
+.thumbnail.two {
   position: relative;
-  left: -200px;
-  top: 0px;
-  opacity: 0;
+  left: 300px;
 }
-
 
 .thumbnail {
+  opacity: 0;
   margin: 0;
-  height: 420px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -275,6 +266,7 @@ projects
   border-right: 0px;
   margin: 20px 0 20px 0;
   padding: 10px 40px 10px 40px;
+  overflow: hidden;
 }
 
 .caption>h3 {
@@ -289,10 +281,6 @@ projects
 .thumbnail.two>img {
   width: 243px;
   height: 132px;
-  position: relative;
-  left: 300px;
-  top: 0px;
-  opacity: 0;
 }
 
 .three>.caption>h3 {
@@ -348,6 +336,7 @@ quote
   top: 50%;
   transform: translate(0, -50%);
   padding: 20px;
+  opacity: 0;
 }
 
 .quote-name {
