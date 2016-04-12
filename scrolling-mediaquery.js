@@ -16,10 +16,12 @@ $(document).ready(function(){
     $("#nav-icon1").show()
     $(".nav-list li a").css("display", "none")
     $("#nav-icon1").removeClass("open")
+    halfWidthCards()
   }
   else{
     $("#nav-icon1").hide()
     $(".nav-list li a").show()
+    fullWidthCards()
   }
 
   if (mobileQuery.matches == true) {
