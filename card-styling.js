@@ -1,8 +1,11 @@
 $(document).ready(function(){
 
+
   $(window).scroll(function() {
-    var pos = $(window).scrollTop();
-    if (pos > 850){
+    var pos = ($("#projects")[0].offsetTop - 450)
+    var windowPos = $(window).scrollTop();
+
+    if (windowPos > pos ){
       $(".two>img").animate({
         "left": "0",
         "opacity": "1"
