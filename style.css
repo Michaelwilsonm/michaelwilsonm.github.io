@@ -237,18 +237,37 @@ projects
 
 .code {
   width: 100px;
-  text-align: center;
   margin: 15px auto -18px;
   color: #fff;
   border: 2px solid;
   padding: 10px;
   border-radius: 50%;
   background-color: #ddd;
+  display:none;
+  position: relative;
+}
+
+.caption:nth-of-type(2) {
+  position: absolute;
+  top: 100px;
+  padding-right: 35px;
+}
+
+.caption:nth-of-type(2)>h3 {
+  margin-left: -10px;
+}
+
+.thumbnail.one>img {
+  position: relative;
+  left: -200px;
+  top: 0px;
+  opacity: 0;
 }
 
 
 .thumbnail {
   margin: 0;
+  height: 420px;
 }
 
 .col-sm-6.col-md-4 {
@@ -264,12 +283,15 @@ projects
 
 .caption>p {
   padding: 10px;
-  /*font-size: 13px;*/
 }
 
 .thumbnail.two>img {
   width: 243px;
   height: 132px;
+  position: relative;
+  left: 200px;
+  top: 0px;
+  opacity: 0;
 }
 
 .three>.caption>h3 {

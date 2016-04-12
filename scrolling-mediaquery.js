@@ -88,21 +88,21 @@ $(document).ready(function(){
   $(".dropdown-content li").click(function(e){
     var $anchor = $(this).find("a")
     var anchorHash = $anchor[0].hash
-    $('html,body').animate({ scrollTop:$(anchorHash).offset().top }, 1000);
+    $('html,body').animate({ scrollTop:$(anchorHash).offset().top }, 800);
   })
 
   $(".scroll").click(function(event) {
-  event.preventDefault();
-  $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 1000);
+    event.preventDefault();
+    $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 800);
   })
 
   $(".fa.fa-chevron-down.fa-4x").click(function(event) {
-  event.preventDefault();
-  $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 1000);
+    event.preventDefault();
+    $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 800);
   })
 
   $(".scroll").click(function(event) {
-  event.preventDefault();
-  $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 1000);
+    event.preventDefault();
+    $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 800);
   })
 })
