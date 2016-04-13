@@ -10,12 +10,12 @@ function fullWidthCards() {
         "opacity": "1",
         "left": "0"
       }, 700)
-      $(".code").fadeIn(1400)
+      $(".code").fadeIn(2000)
     }
     if (windowPos > quotePos){
       $(".quote").animate({
         "opacity": "1",
-      }, 700)
+      }, 800)
     }
   })
 }

@@ -70,7 +70,7 @@ $(document).ready(function(){
 
   //highlight dropdown content
   $(".dropdown-content li").hover(function(){
-    $(this).find("a").stop().css({color: "#999"})
+    $(this).find("a").stop().css({color: "#000"})
     $(this).stop().css({backgroundColor: "white"})
     $(this).stop().css({cursor: "pointer"})
   }, function() {
@@ -90,21 +90,17 @@ $(document).ready(function(){
   $(".dropdown-content li").click(function(e){
     var $anchor = $(this).find("a")
     var anchorHash = $anchor[0].hash
-    $('html,body').animate({ scrollTop:$(anchorHash).offset().top }, 800);
+    $('html,body').animate({ scrollTop:$(anchorHash).offset().top }, 800,"linear");
   })
 
   $(".scroll").click(function(event) {
     event.preventDefault();
-    $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 800);
+    $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 800,"linear");
+
   })
 
   $(".fa.fa-chevron-down.fa-4x").click(function(event) {
     event.preventDefault();
-    $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 800);
-  })
-
-  $(".scroll").click(function(event) {
-    event.preventDefault();
-    $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 800);
+    $('html,body').animate({ scrollTop:$(this.hash).offset().top }, 800,"linear");
   })
 })
