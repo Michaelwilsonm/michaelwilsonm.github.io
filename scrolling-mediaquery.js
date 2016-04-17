@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+  var one = $(".one")
+  var two = $(".two")
+  var three = $(".three")
+  var quote = $(".quote")
+
+
   //media querys
   if (matchMedia) {
     var mobileQuery = window.matchMedia( "(max-device-width: 480px)" )
@@ -16,7 +22,7 @@ $(document).ready(function(){
     $("#nav-icon1").show()
     $(".nav-list li a").css("display", "none")
     $("#nav-icon1").removeClass("open")
-    halfWidthCards()
+    halfWidthCards(one, two, three, quote)
   }
   else{
     $("#nav-icon1").hide()
