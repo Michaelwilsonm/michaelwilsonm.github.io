@@ -291,12 +291,21 @@ projects
 }
 
 .three {
-  padding-bottom: 74px;
+  padding-bottom: 5px;
 }
 
 p>a {
   text-decoration: none;
   color: #aaa;
+  font-weight: bold;
+  color: #777;
+  font-size: 20px;
+}
+
+.fa.fa-arrow-down {
+  margin-top: 5px;
+  margin-left: 50px;
+  color: #FF5722;
 }
 
 p>a:hover {

@@ -1,9 +1,14 @@
-function noisy(f)
-  { return function(arg) {
-  console.log("calling with", arg);
-  var val = f(arg);
-  console.log("called with", arg, "- got", val); return val;
-  };
-}
 
-noisy(Boolean)(0);
+
+The things I am looking for in a company and would relish the opportunity if given the chance would be:
+
+- Best Practices.
+- Code Review.
+- High emphasis on Testing.
+- Agile development.
+- Great Culture.
+- Opportunities to grow and learn.
+
+
+
+Junior web developer, Team player, lover of Javascript, Ruby and learning new things.
