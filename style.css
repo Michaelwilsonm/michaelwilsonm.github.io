@@ -203,9 +203,9 @@ about me
 }
 
 .skills>ul {
-  list-style-type: none;
-  display: block;
-  text-align: center;
+  list-style-type: circle;
+  // display: block;
+  // text-align: center;
 }
 
 .skills>ul>li {
@@ -213,7 +213,7 @@ about me
 
 
 .skills>ul>h4 {
-  text-align: center;
+  // text-align: center;
   color: #bbb;
 }
 
