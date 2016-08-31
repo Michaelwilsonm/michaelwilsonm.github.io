@@ -203,11 +203,17 @@ about me
 }
 
 .skills>ul {
-  margin-left: -20px;
-  list-style-type: circle;
+  list-style-type: none;
+  display: block;
+  text-align: center;
 }
 
+.skills>ul>li {
+}
+
+
 .skills>ul>h4 {
+  text-align: center;
   color: #bbb;
 }
 
@@ -299,7 +305,7 @@ p>a {
   color: #aaa;
   font-weight: bold;
   color: #777;
-  font-size: 20px;
+  font-size: 13px;
 }
 
 .fa.fa-arrow-down {
