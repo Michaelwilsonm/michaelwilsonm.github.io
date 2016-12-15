@@ -58,6 +58,7 @@ kbd{
   transform: rotate(90deg);
   transform-origin: 100%;
   transition: all 0.05s;
+  transition-timing-function: linear;
 }
 
 .seconds{
@@ -70,6 +71,7 @@ kbd{
   transform: rotate(90deg);
   transform-origin: 100%;
   transition: all 0.05s;
+  transition-timing-function: cubic-bezier(1,-0.08, 0, 3.19);
 }
 
 .hours{
@@ -82,4 +84,5 @@ kbd{
   transform: rotate(90deg);
   transform-origin: 100%;
   transition: all 0.05s;
+  transition-timing-function: linear;
 }
