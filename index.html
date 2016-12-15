@@ -3,10 +3,17 @@
 <head>
   <title>beepbooopbeeeeep</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="main.js"></script>
   <link href="gomarice_bat_men2.ttf" rel="stylesheet">
 </head>
 <body onload="introSong()">
+
+  <div class="clock">
+    <div class="minutes"></div>
+    <div class="seconds"></div>
+    <div class="hours"></div>
+  </div>
+
+
   <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
@@ -50,5 +57,6 @@
   <audio data-key="74" src="holy_mashed_potatoes.wav"></audio>
   <audio data-key="75" src="holy_nightmare.wav"></audio>
   <audio data-key="intro" src="batman_theme_x.wav"></audio>
+  <script src="main.js"></script>
 </body>
 </html>

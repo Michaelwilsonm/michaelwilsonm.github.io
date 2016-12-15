@@ -13,7 +13,7 @@ html{
   position: absolute;
   top: 50%;
   height: 100px;
-  margin-top: 200px;
+  margin-top: 90px;
   display: inline-block;
   position: relative;
 }
@@ -33,4 +33,53 @@ kbd{
   float: left;
   margin: 10px;
   text-align: center;
+}
+
+.clock{
+  float: right;
+  position: relative;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  z-index: 10;
+  border: 1px solid;
+  border-color: yellow;
+  border-radius: 100%;
+}
+
+.minutes{
+  display: block;
+  height: 2px;
+  background-color: black;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.05s;
+}
+
+.seconds{
+  display: block;
+  height: 1px;
+  background-color: black;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.05s;
+}
+
+.hours{
+  display: block;
+  height: 2px;
+  background-color: black;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.05s;
 }
