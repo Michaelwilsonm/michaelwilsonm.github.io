@@ -7,7 +7,7 @@ window.addEventListener('keydown', function(e){
 
 function introSong(){
   const intro = document.querySelector("audio[data-key=intro]");
-  // intro.play()
+  intro.play()
 }
 
 
