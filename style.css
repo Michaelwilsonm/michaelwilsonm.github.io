@@ -23,6 +23,7 @@ kbd{
   display: block;
 }
 
+
 .key{
   font-family: "BAT MEN__G";
   display: inline-block;
@@ -35,25 +36,30 @@ kbd{
   text-align: center;
 }
 
+img {
+  width: 100%;
+  position: absolute;
+  right: 0px;
+}
+
 .clock{
   float: right;
   position: relative;
   right: 0;
-  width: 150px;
-  height: 150px;
-  background-color: yellow;
+  width: 200px;
+  height: 125px;
   z-index: 10;
   border: 1px solid;
-  border-color: yellow;
   border-radius: 100%;
 }
 
 .minutes{
   display: block;
   height: 2px;
-  background-color: black;
-  width: 50%;
+  background-color: gold;
+  width: 30%;
   position: relative;
+  left: 20%;
   top: 50%;
   transform: rotate(90deg);
   transform-origin: 100%;
@@ -64,10 +70,11 @@ kbd{
 .seconds{
   display: block;
   height: 1px;
-  background-color: black;
-  width: 50%;
+  background-color: gold;
+  width: 30%;
   position: relative;
   top: 50%;
+  left: 20%;
   transform: rotate(90deg);
   transform-origin: 100%;
   transition: all 0.05s;
@@ -76,13 +83,15 @@ kbd{
 
 .hours{
   display: block;
-  height: 2px;
-  background-color: black;
-  width: 50%;
+  height: 3px;
+  background-color: gold;
+  width: 30%;
   position: relative;
   top: 50%;
+  left: 20%;
   transform: rotate(90deg);
   transform-origin: 100%;
   transition: all 0.05s;
   transition-timing-function: linear;
 }
+
