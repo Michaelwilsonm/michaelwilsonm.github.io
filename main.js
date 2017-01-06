@@ -5,10 +5,10 @@ window.addEventListener('keydown', function(e){
   audio.play();
 })
 
-// function introSong(){
-//   const intro = document.querySelector("audio[data-key=intro]");
-//   intro.play()
-// }
+function introSong(){
+  const intro = document.querySelector("audio[data-key=intro]");
+  intro.play()
+}
 
 
 const secondsDiv = document.querySelector('.seconds')
