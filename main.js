@@ -10,7 +10,6 @@ function introSong(){
   intro.play()
 }
 
-
 const secondsDiv = document.querySelector('.seconds')
 const hoursDiv = document.querySelector('.hours')
 const minutesDiv = document.querySelector('.minutes')
@@ -27,5 +26,7 @@ function getDate(){
   minutesDiv.style.transform = "rotate(" + minutesDegrees + "deg)"
   hoursDiv.style.transform = "rotate(" + hoursDegrees + "deg)"
 }
+
 getDate()
 setInterval(getDate, 1000);
+//GIT FOOING BIARCH
