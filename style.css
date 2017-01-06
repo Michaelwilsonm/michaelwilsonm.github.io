@@ -83,12 +83,12 @@ img {
 
 .hours{
   display: block;
-  height: 3px;
+  height: 4px;
   background-color: gold;
-  width: 30%;
+  width: 25%;
   position: relative;
   top: 50%;
-  left: 20%;
+  left: 25%;
   transform: rotate(90deg);
   transform-origin: 100%;
   transition: all 0.05s;
