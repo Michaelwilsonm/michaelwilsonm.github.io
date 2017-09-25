@@ -1,0 +1,242 @@
+/******************************
+Header styling
+*******************************/
+img {
+	max-width: 100%;
+}
+.ball {
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding: 15px 0 0 15px;
+}
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 2.7em;
+	text-align: center;
+	margin: 0;
+	padding: 0px 0em;
+	color: white;
+}	
+
+h2 {
+	text-align: center;
+	margin: 0 0;
+	font-size: 1.5em;
+	color: white;
+	line-height: 0.2em;
+}
+h3 {
+	margin: 0 0 1em 0;
+}
+
+.page {
+	background-image:url(../img/golfmain.jpg);
+}
+
+.page, html {
+	min-height: 100%;
+}
+
+.page {
+	background-image:url ("img/golfmain.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+h1, h2 {
+	font-family: 'Pacifico', cursive;
+
+}
+
+header {
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	width: 100%;
+}
+
+
+/******************************
+nav styling
+*******************************/
+
+nav ul {
+	text-align: center;	
+	line-height: 1em;
+	padding: 15px 10px;
+	margin: 50px 50px;
+	font-family: 'Bangers', cursive;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a.navstuff, nav a:hover  {
+	color: #000
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+	color: #fff;
+}
+
+
+
+/******************************
+Gallery Stylin'
+*******************************/
+section li.4 {
+	height: 600px 600px;
+}
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+	width: 40%;
+	margin: 2.5%;
+}
+
+#gallery li a p {
+	margin: 0 0;
+	padding: 5%;
+	color: white;
+	font-size: 16px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+
+
+/******************************
+Footer styling
+*******************************/
+.icons1 {
+	max-width: 100%;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+.icons2 {
+	max-width: 100%;
+	width: 35px;
+	height: 34px;
+	margin: -3px 0px;
+	padding: 0 5px;
+}
+ 
+#foot {
+	text-align: center;
+	clear: both;
+	padding: 90px 0px;
+	font-size: 0.7em;
+	color: white;
+} 
+
+
+
+/******************************
+About page
+*******************************/
+
+#paragraph {
+	margin: auto;
+	color: white;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-align: left;
+	padding: 10px;
+	}
+
+.name {
+	color: #fff
+}
+	h3 {
+		font-size: 2em;
+	}
+body {
+	background-image:url(../img/golf2.jpg);
+}
+
+body, html {
+	min-height: 100%;
+}
+
+body {
+	background-image:url ("img/golf2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.pro {
+	width: 200px;
+	height: 200px;
+	max-width: 100%;
+	margin: 0 0 0 80px;
+	padding: 20px 0px 0px 0px;
+ 	display: block;	
+ 	border-radius: 100%;
+}
+
+.con {
+	background-image:url(../img/con1.jpg);
+}
+
+.con, html {
+	min-height: 100%;
+}
+
+.con {
+	background-image:url ("../img/con1.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+
+
+/******************************
+Contact page
+*******************************/
+
+.marg {
+	margin: auto;
+	color: white;
+	text-decoration: none;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	padding: 10px;
+	text-align: left;
+}
+
+.marg h3 {
+	font-size: 2em;
+}
+
+.contact, li  {
+	color: #fff
+}
+
+.phone a, .mail a {
+	font-weight: 700;
+	padding: 4px 0;
+	color: #fff;
+}
+
+li a.phone, li a:hover {
+	color: #000
+}
+
+
+
+
+
+
